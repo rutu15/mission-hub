@@ -1,0 +1,124 @@
+.main {
+  background: linear-gradient(
+    45deg,
+    #5c5858 0%,
+    #403e3e 29%,
+    #000000 66%,
+    #ffffff 100%
+  );
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  overflow: hidden;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.main::before,
+.main::after {
+  content: "";
+  width: 70vmax;
+  height: 70vmax;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.07);
+  left: -20vmin;
+  top: -20vmin;
+  animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+  z-index: 1;
+  will-change: border-radius, transform;
+  transform-origin: 55% 55%;
+  pointer-events: none;
+}
+
+.main::after {
+  width: 70vmin;
+  height: 70vmin;
+  left: auto;
+  right: -10vmin;
+  top: auto;
+  bottom: 0;
+  animation: morph 10s linear infinite alternate,
+    spin 26s linear infinite reverse;
+  transform-origin: 20% 20%;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.content {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  place-items: center;
+  min-height: 600px;
+  min-height: 100vh;
+}
+
+.overview-title {
+  font-size: 2em;
+}
+.search-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 20px;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@media only screen and (max-width: 1024px) {
+  .search-filter {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .overview-title {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .overview-title {
+    font-size: 0.9em;
+  }
+  .content {
+    margin: 30px 0;
+    padding: 0;
+  }
+}

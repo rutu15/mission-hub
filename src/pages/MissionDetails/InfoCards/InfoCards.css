@@ -1,0 +1,102 @@
+.info-card {
+  flex-basis: calc(33.3333% - 30px);
+  margin: 0 15px 30px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+.inner-info-card {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+  overflow: hidden;
+  position: relative;
+}
+
+.inner-info-card {
+  text-decoration: none;
+  color: var(--white-color);
+}
+.inner-info-card:hover .info-bg {
+  transform: scale(10);
+}
+.info-title {
+  min-height: 50px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--white-color);
+  z-index: 2;
+  position: relative;
+}
+.info-description {
+  font-size: 1.1em;
+  color: var(--white-color);
+  z-index: 2;
+  position: relative;
+}
+
+.info-bg {
+  height: 128px;
+  width: 128px;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.mission-planned {
+  background-color: var(--mission-planned-color);
+}
+
+.mission-ongoing {
+  background-color: var(--mission-ongoing-color);
+}
+
+.mission-ready {
+  background-color: var(--misssion-ready-color);
+}
+
+.mission-completed {
+  background-color: var(--mission-completed-color);
+}
+
+@media only screen and (max-width: 1024px) {
+  .info-title {
+    font-size: 1.3em;
+  }
+  .info-description{
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info-card {
+    flex-basis: calc(50% - 30px);
+  }
+  .info-title {
+    font-size: 1.2em;
+  }
+  .info-description{
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .info-card {
+    flex-basis: 100%;
+  }
+  .info-title {
+    min-height: 40px;
+    line-height: 1;
+    
+  }
+  .inner-info-card {
+    padding: 22px 40px;
+  }
+  .info-description {
+    font-size: 0.8em;
+  }
+}

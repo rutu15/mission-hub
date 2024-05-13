@@ -1,0 +1,135 @@
+[
+    {
+      "missionName": "Mars Exploration Mission",
+      "status": "Ongoing",
+      "description": "The Mars Exploration Mission aims to explore the Martian surface, study its geology, search for signs of past life, and prepare for future human exploration.",
+      "launchDate": "2024-01-01",
+      "expectedDuration": "2 years",
+      "currentLocation": "En route to Mars",
+      "trajectory": "Solar orbit towards Mars",
+      "images": [
+        "https://example.com/image1.jpg",
+        "https://example.com/image2.jpg"
+      ],
+      "milestones": [
+        {
+          "name": "Launch and Departure",
+          "date": "2024-01-01",
+          "status": "Achieved"
+        },
+        {
+          "name": "Transit Phase",
+          "date": "2024-01-15",
+          "status": "Ongoing"
+        },
+        {
+          "name": "Entry, Descent, and Landing (EDL) Phase",
+          "expectedDate": "2024-08-15",
+          "status": "Pending"
+        }
+      ],
+      "checklistItems": [
+        {
+          "itemName": "Fuel Levels",
+          "status": "unchecked"
+        },
+        {
+          "itemName": "Engine Readiness",
+          "status": "unchecked"
+        },
+        {
+          "itemName": "Communication Antenna Alignment",
+          "status": "unchecked"
+        }
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "stepDescription": "T-Minus 10 minutes: Start pre-launch procedures."
+        },
+        {
+          "stepNumber": 2,
+          "stepDescription": "T-Minus 5 minutes: Communication checks with mission control."
+        },
+        {
+          "stepNumber": 3,
+          "stepDescription": "T-Minus 1 minute: Final checks and system arming."
+        },
+        {
+          "stepNumber": 4,
+          "stepDescription": "T-Minus 10 seconds: Ignition sequence start."
+        },
+        {
+          "stepNumber": 5,
+          "stepDescription": "T-Minus 0: Liftoff!"
+        }
+      ]
+    },
+    {
+      "missionName": "Venus Exploration Mission",
+      "status": "Planned",
+      "description": "The Venus Exploration Mission aims to explore the surface and atmosphere of Venus, study its geological features, and analyze its climate.",
+      "launchDate": "2025-03-15",
+      "expectedDuration": "3 years",
+      "currentLocation": "Earth",
+      "trajectory": "Interplanetary trajectory towards Venus",
+      "images": [
+        "https://example.com/image3.jpg",
+        "https://example.com/image4.jpg"
+      ],
+      "milestones": [
+        {
+          "name": "Mission Planning",
+          "date": "2024-12-01",
+          "status": "Ongoing"
+        },
+        {
+          "name": "Spacecraft Assembly",
+          "date": "2025-01-15",
+          "status": "Pending"
+        },
+        {
+          "name": "Launch and Departure",
+          "date": "2025-03-15",
+          "status": "Pending"
+        }
+      ],
+      "checklistItems": [
+        {
+          "itemName": "Spacecraft Components",
+          "status": "unchecked"
+        },
+        {
+          "itemName": "Launch Vehicle Readiness",
+          "status": "unchecked"
+        },
+        {
+          "itemName": "Communications Test",
+          "status": "unchecked"
+        }
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "stepDescription": "Mission planning and requirements analysis."
+        },
+        {
+          "stepNumber": 2,
+          "stepDescription": "Spacecraft design and assembly."
+        },
+        {
+          "stepNumber": 3,
+          "stepDescription": "Integration with launch vehicle."
+        },
+        {
+          "stepNumber": 4,
+          "stepDescription": "Launch and ascent to Earth orbit."
+        },
+        {
+          "stepNumber": 5,
+          "stepDescription": "Interplanetary transfer to Venus."
+        }
+      ]
+    }
+  ]
+  

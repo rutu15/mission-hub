@@ -1,0 +1,73 @@
+.vertical-timeline-element-content h2 {
+  font-size: 1.4em;
+}
+.milestone-title {
+  margin: 20px 0;
+}
+
+.milestone-date {
+  color: var(--beige-white-color);
+}
+
+.milestone-card {
+  display: flex;
+  justify-content: space-between;
+}
+.vertical-timeline--two-columns
+  .vertical-timeline-element-content
+  .vertical-timeline-element-date {
+  left: 85%;
+}
+
+.milestone-planned {
+  color: var(--milestone-planned-color);
+}
+
+.milestone-achieved {
+  color: var(--milestone-achieved-color);
+}
+.milestone-awaiting {
+  color: var(--milestone-awaiting-color);
+}
+.milestone-scheduled {
+  color: var(--milestone-scheduled-color);
+}
+.milestone-ongoing {
+  color: var(--milestone-ongoing-color);
+}
+
+.milestone-description {
+  text-align: left;
+}
+
+@media only screen and (max-width: 1170px) {
+  .vertical-timeline--two-columns
+    .vertical-timeline-element-content
+    .vertical-timeline-element-date {
+    color: var(--black-color);
+  }
+  .milestone-date {
+    color: var(--black-color);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .vertical-timeline-element-title,
+  .vertical-timeline-element-content h2 {
+    font-size: 1em;
+  }
+  .milestone-title {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .vertical-timeline-element-title,
+  .vertical-timeline-element-content h2 {
+    font-size: 0.9em;
+  }
+  .milestone-title {
+    font-size: 0.7em;
+  }
+ 
+}

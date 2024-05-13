@@ -1,0 +1,146 @@
+.mission-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-color);
+  overflow-y: auto;
+  padding-top: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 70px;
+  top: 100px;
+  z-index: 999;
+  cursor: pointer;
+}
+.mission-content {
+  padding: 20px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.mission-sub-container {
+  position: relative;
+  width: 100%;
+}
+
+.mission-sub-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.mission-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.mission-info-up {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mission-name {
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.mission-status {
+  padding: 8px 16px;
+  border-radius: 40px;
+  text-align: center;
+  width: auto;
+  min-width: 150px;
+  margin-left: 15px;
+  font-size: 1.1em;
+}
+
+.mission-info-down {
+  width: 630px;
+  word-wrap: break-word;
+}
+
+.misson-description {
+  font-size: 1.1em;
+}
+
+.mission-cards {
+  position: absolute;
+  bottom: -5%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1170px) {
+  .mission-cards {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mission-info {
+    position: relative;
+    top: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .mission-info-up {
+    justify-content: center;
+  }
+
+  .mission-name {
+    font-size: 1.5em;
+  }
+
+  .mission-status {
+    font-size: 1em;
+    min-width: 90px;
+  }
+  .misson-description {
+    font-size: 0.9em;
+  }
+  .back-arrow {
+    left: 30px;
+    top: 70px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mission-name {
+    font-size: 1.2em;
+  }
+
+  .mission-status {
+    font-size: 0.8em;
+    max-width: 90%;
+    padding: 4px 8px;
+    min-width: 60px;
+  }
+  .mission-info-up {
+    display: block;
+  }
+  .mission-info-down {
+    width: 350px;
+    margin-top: 10px;
+  }
+  .misson-description {
+    font-size: 0.7em;
+  }
+  .back-arrow {
+    left: 10px;
+    top: 50px;
+  }
+}

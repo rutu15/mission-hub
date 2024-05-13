@@ -1,0 +1,7 @@
+.Toastify__progress-bar {
+    background-color: var(--white-color);
+}
+
+.Toastify__progress-bar-theme--dark {
+    background-color: var( --beige-white-color);
+}

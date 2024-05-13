@@ -1,0 +1,108 @@
+.card {
+  display: flex;
+  border: 1px solid var(--white-color);
+  border-radius: 15px;
+  margin: 30px;
+  overflow: hidden;
+  width: 70%;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  background-color: var(--black-color);
+  padding: 25px;
+  cursor: pointer;
+}
+
+.card-image {
+  flex: 1 0 200px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  flex: 1 0 calc(100% - 200px);
+  padding: 20px;
+}
+
+.first {
+  display: flex;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 1.3em;
+  width: 80%;
+  text-transform: uppercase;
+}
+
+.card-description {
+  font-size: 1em;
+  margin-top: 30px;
+}
+
+.card-status {
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 40px;
+  width: auto;
+  min-width: 150px;
+  text-align: center;
+}
+
+.mission-planned {
+  background-color: var(--mission-planned-color);
+}
+
+.mission-ongoing {
+  background-color: var(--mission-ongoing-color);
+}
+
+.mission-ready {
+  background-color: var(--misssion-ready-color);
+}
+
+.mission-completed {
+  background-color: var(--mission-completed-color);
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  .first {
+    flex-wrap: wrap;
+    order: 1;
+  }
+  .card-title {
+    width: 100%;
+    order: 2;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-title {
+    font-size: 1em;
+  }
+  .card-description {
+    font-size: 0.8em;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .card-title {
+    font-size: 0.9em;
+  }
+  .card-description {
+    font-size: 0.6em;
+    margin-top: 10px;
+  }
+  .card-status {
+    font-size: 0.7em;
+    padding: 2px;
+    min-width: 120px;
+  }
+}
